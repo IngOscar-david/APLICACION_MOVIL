@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acerca de la App\n\nEsta aplicación fue desarrollada como un recordatorio inteligente para organizar tus tareas y actividades. Con ella podrás:\n\n- Crear y gestionar recordatorios.\n- Mantener tus pendientes en orden.\n- Acceder fácilmente a tu información.\n\nVersión 1.0\nDesarrollada en Android Studio con Kotlin."
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:textAlignment="center" />
+
+</ScrollView>

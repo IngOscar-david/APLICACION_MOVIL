@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"> <!-- Fondo personalizado -->
+    android:background="@drawable/login_background"> <!-- Fondo del login  -->
 
     <ImageView
         android:id="@+id/logoSplash"

@@ -4,7 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:id="@+id/imgIconoLogin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icono_login"
+        android:layout_marginBottom="48dp" />
+
+
 
     <EditText
         android:id="@+id/etCorreoLogin"
@@ -12,7 +22,11 @@
         android:layout_height="wrap_content"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_redondo_border"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"/>
+
 
     <EditText
         android:id="@+id/etContrasenaLogin"
@@ -20,11 +34,29 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_redondo_border"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"/>
 
     <Button
         android:id="@+id/btnIniciarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"/>
+        android:text="Iniciar Sesión"
+        android:background="@drawable/borderedondo_background"/>
+
+    <TextView
+        android:id="@+id/tvOlvidarContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+
 </LinearLayout>

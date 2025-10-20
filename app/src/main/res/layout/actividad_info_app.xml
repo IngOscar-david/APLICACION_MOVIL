@@ -2,14 +2,35 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/login_background">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Acerca de la App\n\nEsta aplicación fue desarrollada como un recordatorio inteligente para organizar tus tareas y actividades. Con ella podrás:\n\n- Crear y gestionar recordatorios.\n- Mantener tus pendientes en orden.\n- Acceder fácilmente a tu información.\n\nVersión 1.0\nDesarrollada en Android Studio con Kotlin."
-        android:textSize="16sp"
-        android:lineSpacingExtra="4dp"
-        android:textAlignment="center" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acerca de la App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RemindMe es una aplicación móvil desarrollada como un recordatorio inteligente para organizar tus tareas y actividades diarias de manera eficiente. Esta herramienta te permite crear y gestionar recordatorios personalizados, establecer prioridades, recibir notificaciones en tiempo real y mantener el control total de tus compromisos importantes. Con una interfaz moderna e intuitiva diseñada siguiendo los principios de Material Design, podrás acceder rápidamente a tu información, sincronizar tus datos de forma segura en la nube mediante Firebase, y personalizar la aplicación según tus preferencias. Ya sea que necesites recordar reuniones de trabajo, citas médicas, cumpleaños de tus seres queridos, o simplemente llevar un registro de tus tareas del hogar, RemindMe es la solución perfecta para aumentar tu productividad, reducir el estrés mental de recordar múltiples actividades, y organizar tu vida de manera efectiva. La aplicación fue desarrollada utilizando Kotlin como lenguaje de programación principal, Android Studio como entorno de desarrollo, y siguiendo la arquitectura MVVM para garantizar un código limpio, mantenible y escalable. Versión 1.0 - Desarrollada con las últimas tecnologías de Android para ofrecerte la mejor experiencia de usuario."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
 
 </ScrollView>

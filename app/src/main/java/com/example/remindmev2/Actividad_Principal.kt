@@ -2,8 +2,10 @@ package com.example.remindmev2
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import com.google.android.material.switchmaterial.SwitchMaterial
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 class Actividad_Principal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,18 @@ class Actividad_Principal : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.btnLogin)
         val btnRegistro: Button = findViewById(R.id.btnRegistro)
         val btnInfoApp: Button = findViewById(R.id.btnInfoApp)
+
+        // Referencia al switch
+        val switchModoOscuro: SwitchMaterial = findViewById(R.id.switchModoOscuro)
+
+        // Listener del switch: activa o desactiva el modo oscuro
+        switchModoOscuro.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
 
         // Ir a Iniciar Sesión
         btnLogin.setOnClickListener {

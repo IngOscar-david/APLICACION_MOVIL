@@ -9,17 +9,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Acerca de la App"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:text="Acerca de la Aplicacion"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"

@@ -3,5 +3,11 @@
     <style name="Base.Theme.RemindmeV2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <item name="colorPrimary">#112D4E</item><!-- Azul principal -->
+        <item name="colorPrimaryContainer">#1976D2</item> <!-- Azul más oscuro -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Texto en botones -->
+        <item name="android:statusBarColor">#1976D2</item><!-- barra del sistema;bateria,hora etc.. -->
+        <item name="android:navigationBarColor">#1976D2</item><!-- barra de navegacion -->
     </style>
 </resources>

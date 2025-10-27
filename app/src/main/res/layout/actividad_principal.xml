@@ -11,17 +11,18 @@
 
     <!--  Switch para modo oscuro   -->
     <!-- android:text=""-->
+
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/switchModoOscuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
         android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
 
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -39,20 +40,20 @@
             android:id="@+id/btnLogin"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:text="Iniciar Sesion" />
 
         <Button
             android:id="@+id/btnRegistro"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Registro"
+            android:text="Registrarse"
             android:layout_marginTop="16dp"/>
 
         <Button
             android:id="@+id/btnInfoApp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Info App"
+            android:text="Acerca de la aplicacion"
             android:layout_marginTop="16dp"/>
 
     </LinearLayout>

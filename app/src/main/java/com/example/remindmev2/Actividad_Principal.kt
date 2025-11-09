@@ -18,16 +18,16 @@ class Actividad_Principal : AppCompatActivity() {
         val btnInfoApp: Button = findViewById(R.id.btnInfoApp)
 
         // Referencia al switch
-        val switchModoOscuro: SwitchMaterial = findViewById(R.id.switchModoOscuro)
+        ////val switchModoOscuro: SwitchMaterial = findViewById(R.id.switchModoOscuro)
 
         // Listener del switch: activa o desactiva el modo oscuro
-        switchModoOscuro.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
-        }
+        //switchModoOscuro.setOnCheckedChangeListener { _, isChecked ->
+        // if (isChecked) {
+        //       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        // } else {
+        //      AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        //  }
+        // }
 
         // Ir a Iniciar Sesión
         btnLogin.setOnClickListener {

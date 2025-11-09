@@ -7,31 +7,50 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.remindmev2.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.remindmev2.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.remindmev2.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.remindmev2.ui.panelTareas.PanelTareasFragment"
+        android:label="Panel de Tareas"
+        tools:layout="@layout/fragment_panel_tareas" />
 
     <fragment
         android:id="@+id/nav_crear_tarea"
         android:name="com.example.remindmev2.ui.crearTarea.CrearTareaFragment"
-        android:label="Crear tarea"
+        android:label="Crear Tarea"
         tools:layout="@layout/fragment_crear_tarea" />
 
     <fragment
         android:id="@+id/nav_panel_tareas"
         android:name="com.example.remindmev2.ui.panelTareas.PanelTareasFragment"
-        android:label="Panel de tareas"
+        android:label="Panel de Tareas"
         tools:layout="@layout/fragment_panel_tareas" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.remindmev2.ui.perfil.PerfilFragment"
+        android:label="Mi Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_amigos"
+        android:name="com.example.remindmev2.ui.amigos.AmigosFragment"
+        android:label="Amigos"
+        tools:layout="@layout/fragment_amigos" />
+
+    <fragment
+        android:id="@+id/nav_agregar_amigos"
+        android:name="com.example.remindmev2.ui.agregarAmigos.AgregarAmigosFragment"
+        android:label="Agregar Amigos"
+        tools:layout="@layout/fragment_agregar_amigos" />
+
+
+    <fragment
+        android:id="@+id/nav_recordar_tarea"
+        android:name="com.example.remindmev2.ui.recordarTarea.RecordarTareaFragment"
+        android:label="Recordar Tarea"
+        tools:layout="@layout/fragment_recordar_tarea" />
+
+    <fragment
+        android:id="@+id/nav_compartir_tarea"
+        android:name="com.example.remindmev2.ui.compartirTarea.CompartirTareaFragment"
+        android:label="Compartir Tarea"
+        tools:layout="@layout/fragment_compartir_tarea" />
 </navigation>

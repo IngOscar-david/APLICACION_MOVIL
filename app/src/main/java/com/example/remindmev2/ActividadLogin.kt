@@ -40,9 +40,10 @@ class ActividadLogin : AppCompatActivity() {
             auth.signInWithEmailAndPassword(correo, contrasena)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        // ✅ Si el inicio de sesión es exitoso, redirige a la actividad de Crear Tarea
+                        // ✅ Si el inicio de sesión es exitoso, redirige al menú principal
                         Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, ActividadCrearTarea::class.java)
+                        val intent = Intent(this, MainMenuActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                         finish() // evita que vuelva atrás al login
                     } else {
@@ -58,4 +59,3 @@ class ActividadLogin : AppCompatActivity() {
         }
     }
 }
-

@@ -3,18 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Panel de Tareas" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_crear_tarea"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Crear Tarea" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_perfil"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Mi Perfil" />
     </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_amigos"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Amigos" />
+            <item
+                android:id="@+id/nav_agregar_amigos"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Agregar Amigos" />
+
+            <item
+                android:id="@+id/nav_compartir_tarea"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Compartir Tarea" />
+        </menu>
+    </item>
+
+    <item android:title="Recordatorios">
+        <menu>
+            <item
+                android:id="@+id/nav_recordar_tarea"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="Recordar Tarea" />
+        </menu>
+    </item>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/nav_acerca_de"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Acerca de la App" />
+        </menu>
+    </item>
+
+    <item android:title="Sesión">
+        <menu>
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
 </menu>
